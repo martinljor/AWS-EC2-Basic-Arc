@@ -12,10 +12,13 @@ The procedure to deploy the infrastructure and the code need the following code:
 - Install and configure [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 - Install and configure [Terraform](https://www.terraform.io/downloads.html)
 
-Go to the environment, for this example i am using "AWS-EC2-Basic-ARC", and copy the files in this repo:
+Go to the environment, for this example i am using "AWS-EC2-Basic-ARC":
 
 ```bash
 $ cd terraform/AWS-EC2-Basic-ARC
+```
+```bash
+$ git clone 
 ```
 - Initialised Terraform
 ```bash
