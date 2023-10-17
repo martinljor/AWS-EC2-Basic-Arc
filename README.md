@@ -15,10 +15,13 @@ The procedure to deploy the infrastructure and the code need the following code:
 Go to the environment, for this example i am using "AWS-EC2-Basic-ARC":
 
 ```bash
-$ cd terraform/AWS-EC2-Basic-ARC
+$ cd terraform/
 ```
 ```bash
-$ git clone 
+$ git clone https://github.com/tinchom/AWS-EC2-Basic-Arc.git
+```
+```bash
+$ cd terraform/AWS-EC2-Basic-Arc
 ```
 - Initialised Terraform
 ```bash
