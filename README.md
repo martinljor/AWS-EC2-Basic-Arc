@@ -3,7 +3,8 @@ Using Terraform to deploy a basic architecture for ec2 instances running apache 
 
 ## Architecture
 The principal idea is to Work with Terraform and AWS to build this diagram:
-![AWS-ec2-basic-arc](https://github.com/tinchom/AWS-EC2-Basic-Arc/assets/7529358/d52fd483-abdc-4a6d-bcd8-ebfe3a1275ee)
+![AWS-ec2-basic-arc](https://github.com/tinchom/AWS-EC2-Basic-Arc/assets/7529358/0789bf77-e604-472f-b65e-a6e83037caaf)
+
 
 
 ### Deploy the Code & Infrastructure
