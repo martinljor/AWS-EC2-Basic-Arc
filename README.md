@@ -12,9 +12,10 @@ The procedure to deploy the infrastructure and the code need the following code:
 - Install and configure [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 - Install and configure [Terraform](https://www.terraform.io/downloads.html)
 
-Go to the environment, for this example i am using "awsbasicarc"
+Go to the environment, for this example i am using "AWS-EC2-Basic-ARC", and copy the files in this repo:
+
 ```bash
-$ cd terraform/awsbasicarc
+$ cd terraform/AWS-EC2-Basic-ARC
 ```
 - Initialised Terraform
 ```bash
@@ -26,19 +27,22 @@ $ terraform validate
 ```
 - Execute the terraform plan (its going to ask you for key and secret)
 ```bash
-$ terraform plan
+$ terraform plan -out AWS-EC2-Basic-ARC.plan
 ```
 - Apply the terraform plan
 ```bash
-$ terraform apply 
+$ terraform apply "AWS-EC2-Basic-ARC"
 ```
 If everything went right, you can view the architecture deployed on your account.
 
 ### Files descriptions
 
-- `Networking.tf:` This file contain the creation of VPC, Subnet, Internet GW, NAT GW, Route tables, Subnet Associations and Elastic IPs resources.
+- `vpc.tf:` This file contain the creation of VPC, Subnet, Internet GW, NAT GW, Route tables, Subnet Associations and Elastic IPs resources.
 - `sg.tf:` This file contain the creation of Security Groups resources required for EFS connection.
 - `ec2.tf:` This file contain the creation of EC2 resources/instances.
-- `variables.tf:` This file contains the variables and values of access keys, secret key, subnet settings and availabilty zones. For this case is set to us-east-1a and us-east-1b.
+- `vars.tf:` This file contains the variables and values of access keys, secret key, subnet settings and availabilty zones. For this case is set to us-east-1a and us-east-1b.
+
+### Results
+If all went well you will have 2 instances running in public and private subnets. The private will access to HTTP services running EC2 public instance.
 
 
